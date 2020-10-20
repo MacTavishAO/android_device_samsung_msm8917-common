@@ -118,7 +118,6 @@ TARGET_SEC_FP_HAL_VARIANT := bauth
 # HIDL
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/framework_compatibility_matrix.xml
 
 # Filesystem
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
@@ -137,7 +136,8 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/dsp:/dsp \
     /vendor/firmware_mnt:/firmware \
-    /mnt/vendor/persist:/persist
+    /mnt/vendor/persist:/persist \
+    /mnt/vendor/efs:/efs
 
 # Graphics
 BOARD_USES_ADRENO := true
